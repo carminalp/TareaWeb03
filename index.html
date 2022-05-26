@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo Bootstrap 4</title>
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
 </head>
 <body>
-
   <!-- NAV -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
       <div class = "container">
         <a class="navbar-brand" href="#">
           <img src="img/TeenTitans.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -37,10 +36,24 @@
         </div>
       </div>
     </nav>
-  </header>
 
-  <!-- CARRUSEL -->
-  <div class="container p-1">
+  <header class="masthead text-center text-white">
+      <div class="masthead-content">
+          <div class="container px-5">
+              <h1 class="masthead-heading mb-0">Teen Titans</h1>
+              <p class="masthead-subheading mb-0">Equipo de alto rendimiento</p>
+              <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+          </div>
+      </div>
+      <div class="bg-circle-1 bg-circle"></div>
+      <div class="bg-circle-2 bg-circle"></div>
+      <div class="bg-circle-3 bg-circle"></div>
+      <div class="bg-circle-4 bg-circle"></div>
+  </header>  
+ 
+  <section id="scroll">
+    <!-- CARRUSEL -->
+  <div class="container ">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -69,6 +82,8 @@
       </a>
     </div>
   </div>
+  </section>
+
   <!-- TEAM -->
   <div class = "bg-light">
     <div class="container p-1"> 
@@ -120,6 +135,59 @@
         </div>
       </div>
     </div>
+  </div>
+  
+  <!-- Tabla-->
+  <div class = "container">
+    <div class="header text-center p-3 ">
+      <h1>About us</h1>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Héroe</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alexa</td>
+            <td>Raven</td>
+            <td>Chihuahua</td>
+          </tr>
+          <tr>              
+            <td>Alejandro</td>
+            <td>Cyborg</td>
+            <td>Baja California</td>
+          </tr>
+          <tr>
+            <td>Carmina</td>
+            <td>Starfire</td>
+            <td>Oaxaca</td>
+          </tr>
+          <tr>
+            <td>Cristina</td>
+            <td>Robin</td>
+            <td>Tamaulipas</td>
+          </tr>
+          <tr>
+            <td>Rodrigo</td>
+            <td>Beastboy</td>
+            <td>Nuevo Leon</td>            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <!--Footer-->
+  <footer class="py-5  bg-light ">
+    <div class="container px-5 text-center">
+    <p class="text-center small">Copyright © Teen Titans 2022</p>
+    </div>
+  </footer>
   
     <script src="bootstrap-4.3.1-dist/js/jquery-3.6.0.min.js"></script>
     <script src=" bootstrap-4.3.1-dist/js/popper.min.js"></script>
